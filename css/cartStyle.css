@@ -1,0 +1,93 @@
+.Removbtn{
+    border-radius: 5px;
+    background-color: rgb(160, 23, 23);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    transition: 0.5s;
+    border: none;
+ 
+}
+.Removbtn:hover{
+    background-color: rgb(160, 23, 23);
+}
+.empty{
+    display: none;
+}
+.empty h2{
+    /* color: #025048; */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.priceDiv{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 0 10px 0;
+}
+.favourite{
+    font-weight: bold;
+    text-align: center;
+}
+.favline{
+    width: 8%;
+    height: 3px;
+    background-color: #025048;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.favline:hover{
+    width: 12%;
+}
+.swiper {
+    padding-bottom: 80px !important;
+    width: 100%;
+    padding: 8px;
+}
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #025048;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.swiper-pagination{
+    color: #025048;
+}
+.FavoIcon{
+    display: block;
+    text-align: right;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 25px;
+
+}
+.FavoIcon i{
+    font-size: 22px;
+    color: #025048;
+    cursor: pointer;
+
+}
+.card-hover{
+    transition: all 0.5s;
+}
+.card-hover:hover{
+  transform: scale(1.02);
+}
+.card{
+    border: 2px solid #8f8d8d;
+    transition: 0.3s;
+}
+.card:hover{
+    border: 2px solid #025048;
+}

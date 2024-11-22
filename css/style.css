@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f4f4;
+}
+
+.headerLinks:hover{
+    color: #d3d0d0 !important;
+}
+.cart-icon:hover{
+    color: #d3d0d0 !important;
+}
+.products_inCart{
+    position: absolute;
+    transform: translate(-200px , 0px);
+}
+.collapse-button:hover{
+    color: #d3d0d0 !important;
+}
+.a-underline{
+    text-decoration: none;
+    font-weight: bold;
+}
+.a-font{
+    font-size: 20px;
+}
+.links{
+    left: 50px;
+}
+nav .user_info{
+    display: none;
+}
+#username {
+    color: #eee;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.card-buttons{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.card-buttons .Addbtn{
+   border-radius: 5px;
+   background-color: #025048;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   border: none;
+   transition: 0.5s;
+   border: 3px solid #025048;
+
+}
+.card-buttons .Addbtn:hover{
+    background-color: white;
+    color: #025048;
+}
+.card-buttons .Removbtn{
+    border-radius: 5px;
+    background-color: rgb(160, 23, 23);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    transition: 0.5s;
+    border: 3px solid rgb(160, 23, 23);
+ 
+ }
+ 
+.card-buttons .addfav{
+    margin-left: auto;
+    display: block;
+    font-size: 22px;
+    color: #c5c3c3;
+    cursor: pointer;
+}
+.card-buttons .remofav{
+    margin-left: auto;
+    display: none;
+    font-size: 22px;
+    color: #025048;
+    cursor: pointer;
+
+}
+
+.badge{
+    width: 18px;
+    height: 18px;
+    color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    top: 18px;
+    left: 11px;
+    display: none;
+}
+.viewProducts{
+    display: none;
+}
+.card-hover{
+    transition: all 0.5s;
+}
+.card-hover:hover{
+  transform: scale(1.03);
+}
+.card{
+    border: 2px solid #8f8d8d;
+    transition: 0.3s;
+}
+.card:hover{
+    border: 2px solid #025048;
+}

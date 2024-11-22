@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store || Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--  header -->
+    <header>
+      <nav class="navbar navbar-expand-lg mb-4 " style="background-color: #025048;">
+          <div class="container-fluid d-flex justify-content-between ">
+  
+            <a class="navbar-brand" href="index.html" style="cursor: pointer;">
+              <img src="imgs/logo8.PNG" alt="" style="width: 65px; height: 70px; border-radius: 4px;">
+            </a>
+  
+            <button class="navbar-toggler border-0" style="background-color: #eee;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="true">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse mb-1" id="collapsibleNavbar" >
+              <div class=" ms-auto  align-items-center" > 
+                <div class="d-flex" style="position: relative;">
+                  <!-- loginReg links -->
+                  <div class="links ">
+                    <a href="login.html" class="p-2 headerLinks rounded" style="margin-right: 10px; color: #eee; font-size: 18px; font-weight: bold; text-decoration: none; transition: 0.3s; border: 2px solid #eee;">Login</a>
+                    <a href="register.html" class="p-2 headerLinks rounded" style="margin-right: 10px; color: #eee; font-size: 18px; font-weight: bold; text-decoration: none; transition: 0.3s; border: 2px solid #eee;">Register</a>
+                  </div>
+                  
+                  <div class="d-flex align-items-center m-auto ">
+                    <div class="user_info" >
+                      <div id="username"></div>
+                      <div class="d-flex" style="position: relative;" >
+                      <!-- Cart icon -->
+                      <i class="fas fa-shopping-cart cart-icon" style="cursor: pointer; font-size: 20px; color: #eee; transition: 0.3s;"></i>
+                      <!-- Products number -->
+                      <span class="badge"></span>
+                      <!-- arrow to show products -->
+                       <div class="div">
+                        <button class="btn btn-link p-0 ms-2 collapse-button" data-bs-toggle="collapse" data-bs-target="#cartItems" style="color: #eee; font-size: 15px; transition: 0.3s;">
+                          <i class="fas fa-caret-square-down down-icon"></i>
+                        </button>
+                       </div>
+                      
+                       <!-- Cart's products -->
+                        <div class="d-flex justify-content-between links" style=" position: absolute;">
+                        
+                          <div id="cartItems" class="collapse rounded products_inCart z-1 " style="width: 260px ; background-color: #025048; padding: 10px; margin-top: 58px;">
+                            <!-- <i class="fas fa-times-circle" style="display: block; margin-left:90%; font-size: 20px; color: #eee; cursor: pointer;"></i> -->
+                            <div class="carts_products">
+
+                            </div>
+                            <!-- View All Products Link -->
+                            <div class="text-center  mt-2">
+                              <a href="#" class=" a-underline viewProduct" style="color: #eee; font-weight: bold;">Cart Is Empty</a>
+                            </div>
+                          </div>
+          
+                        </div>
+                      </div>
+                      <!-- Log out -->
+                      <a href="#" class="p-2 rounded headerLinks text-center" id="logout" style="margin-right: 10px; color: #eee; font-size: 18px; font-weight: bold; text-decoration: none; transition: 0.3s; margin-left: 30px; border: 2px solid #eee; padding: 10px;">Log out</a>
+                    </div>
+                  </div>
+                   
+                  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <!-- search inputs -->
+    <section style="margin-bottom: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <select class="form-select mb-3 searchType" style="border: 2px solid #8f8d8d;" aria-label="Select category">
+              <option value="name" selected>Name</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <input type="text" class="form-control" id="SearchInput" placeholder="Search..." aria-label="Search" style="border: 2px solid #8f8d8d;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products -->
+    <section>
+      <div class="home  mb-4">
+        <div class="container ">
+            <div class="products searchedItems row row-cols-sm-2  row-cols-md-3 row-cols-lg-4 d-flex justify-content-center g-4">
+
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- <button class="removefromcart" onclick="RemoveFromCart(1)">removefromcart</button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
